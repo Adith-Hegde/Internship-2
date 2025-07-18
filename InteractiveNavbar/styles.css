@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: transparent;
+  padding: 15px 30px;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+.navbar.scrolled {
+  background-color: #333;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Links */
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.nav-menu a:hover {
+  color: #00ffff;
+  transform: scale(1.1);
+}
+
+/* Section styling to show scroll effect */
+section {
+  height: 100vh;
+  padding: 100px 40px 0;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ccc;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
